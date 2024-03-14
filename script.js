@@ -52,6 +52,11 @@ while (restartGame){
     // Continue looping until the guesses of the correct number runs out of attempts (NOTE: Loops until a BREAK keyword is run)
     while (true){
 
+        // Displays the number/answer when a secret code word is entered
+        if (guess === `BroncosCountryLetsRide`) {
+            alert(`The number is ${randomNum}`);
+        }
+
         // Tries to convert the user's guess into a number
         guess = parseInt(guess)
 
